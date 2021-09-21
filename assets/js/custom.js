@@ -1,7 +1,10 @@
 $(".toggle-blog").hide("fast");
 $(".btn-seeless").hide();
 
-var mouse = { x: 0, y: 0 };
+var mouse = {
+  x: 0,
+  y: 0
+};
 
 homex = 0;
 homey = 0;
@@ -10,7 +13,10 @@ forcey = 0;
 magnet = 500;
 
 $(document).bind("mousemove", function (e) {
-  mouse = { x: e.pageX, y: e.pageY };
+  mouse = {
+    x: e.pageX,
+    y: e.pageY
+  };
 });
 
 $(".wooble-effect").each(function (index, el) {
@@ -69,8 +75,7 @@ $(document).ready(function () {
     slidesToScroll: 6,
     autoplay: true,
     speed: 1000,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1199,
         settings: {
           slidesToShow: 5,
@@ -179,8 +184,7 @@ $(document).ready(function () {
     centerMode: false,
     focusOnSelect: true,
 
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 575,
         settings: {
           autoplay: true,
@@ -294,8 +298,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 500,
     speed: 1000,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1199,
         settings: {
           slidesToShow: 3,
@@ -405,8 +408,7 @@ $(document).ready(function () {
   });
 
   $(".return-to-top").on("click", function () {
-    $("html, body").animate(
-      {
+    $("html, body").animate({
         scrollTop: 0,
       },
       1000
@@ -511,3 +513,44 @@ $(document).ready(function () {
     duration: 2000,
   });
 });
+
+
+
+
+
+// $(document).ready(function () {
+
+//   var panalButton = $(".panel-title a");
+//   let panalBody = document.querySelector('.panel-collapse')
+//   let panalIcon = $(".career-faq-content .single-why-choose-feature-accordion .panel-title a:after");
+
+//   if ('.panel-collapse') {
+//     $('.panel-collapse').each(function () {
+//       // let a = $(this).hasClass('show'); // true
+//       // console.log(a);
+//       // if ($(this).hasClass('show')) {
+//       //   $(this).parent('.panel').find('.panel-heading').addClass('d-none')
+//       // } else {
+//       //   $(this).parent('.panel').find('.panel-heading').removeClass('d-none')
+
+//       // }
+//     })
+//     $(".panel-title a").click(function () {
+//       $('.single-why-choose-feature-accordion.panel-collapse').each(function () {
+//         let a = $(this).hasClass('show'); // true
+//         console.log(a);
+//         if ($(this).hasClass('show')) {
+//           $(this).parent('.panel').find('.panel-heading .panel-title ').addClass('icon-chnage')
+//           console.log($(this), "Has Show");
+//         } else {
+//           $(this).parent('.panel').find('.panel-heading .panel-title ').removeClass('icon-chnage')
+//           console.log($(this), "Doesnot Show");
+
+//         }
+//       })
+//     })
+//   }
+ 
+
+// })
+
